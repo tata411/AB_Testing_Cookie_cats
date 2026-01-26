@@ -4,3 +4,17 @@ But where should the gates be placed? Initially the first gate was placed at lev
 
 ## Project Overview
 
+The purpose of this project is to conduct an A/B test comparing two different versions of a game level. The test seeks to answer the following question:
+- **Does the placement of the gate (level block) in the game impact player engagement, as measured by the number of rounds played (`sum_gamerounds`)?**
+
+The results will help determine if there is a statistically significant difference between the two versions and guide the company on which version to continue using.
+
+## Dataset
+
+The dataset `cookie_cats.csv` contains the following columns:
+
+- `userid`: Unique identifier for each player
+- `version`: The game version the player interacted with (either `gate_30` or `gate_40`)
+- `sum_gamerounds`: Number of game rounds played by the player
+- `retention_1`: Whether the player returned the day after installing the game
+- `retention_7`: Whether the player returned seven days after installing the game
